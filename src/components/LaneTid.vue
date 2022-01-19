@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-row">
-    <p class="text-black pr-4">Lånebelopp</p>
+    <p class="text-black pr-4">Lånetid</p>
 
     <input
       type="range"
       min="0"
-      max="350000"
+      max="15"
       v-model="rangeValue"
       placeholder="350 000 kr"
       @change="changeValue"
@@ -17,7 +17,7 @@
 
 <script lang="ts">
 export default {
-  name: "LaneBelopp",
+  name: "LaneTid",
   data() {
     return {
       rangeValue: 0,
