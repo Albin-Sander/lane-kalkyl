@@ -13,13 +13,14 @@
     />
     <p class="text-black dark:text-white pl-4">
       {{ Number(rangeValue).toLocaleString() }}
+      kr
     </p>
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  name: "LaneBelopp",
+import { defineComponent } from "vue";
+const LaneBelopp = defineComponent({
   data() {
     return {
       rangeValue: 0,
@@ -31,7 +32,9 @@ export default {
       this.$store.commit("changeLaneBeloppValue", this.rangeValue);
     },
   },
-};
+});
+
+export default LaneBelopp;
 </script>
 
 <style></style>

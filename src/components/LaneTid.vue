@@ -13,13 +13,14 @@
     />
     <p class="text-black dark:text-white pl-4">
       {{ Number(rangeValue).toLocaleString() }}
+      År
     </p>
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  name: "LaneTid",
+import { defineComponent } from "vue";
+const LaneTid = defineComponent({
   data() {
     return {
       rangeValue: 0,
@@ -31,7 +32,9 @@ export default {
       this.$store.commit("changeLaneTid", this.rangeValue);
     },
   },
-};
+});
+
+export default LaneTid;
 </script>
 
 <style></style>
