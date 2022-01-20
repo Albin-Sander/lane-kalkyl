@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row">
-    <p class="text-black pr-4">Lånebelopp</p>
+    <p class="text-black dark:text-white pr-4">Lånebelopp</p>
 
     <input
       type="range"
@@ -11,7 +11,9 @@
       @change="changeValue"
       class="range range-lg w-96 rounded-lg range-primary"
     />
-    <p class="text-black pl-4">{{ Number(rangeValue).toLocaleString() }}</p>
+    <p class="text-black dark:text-white pl-4">
+      {{ Number(rangeValue).toLocaleString() }}
+    </p>
   </div>
 </template>
 
@@ -26,6 +28,7 @@ export default {
   methods: {
     changeValue: function () {
       console.log(this.rangeValue);
+      this.$store.commit("changeLaneBeloppValue", this.rangeValue);
     },
   },
 };

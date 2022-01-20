@@ -9,7 +9,8 @@
   "dependencies": {
     "daisyui": "^1.24.2",
     "vue": "^3.2.25",
-    "vue-range-component": "^1.0.3"
+    "vue-range-component": "^1.0.3",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",

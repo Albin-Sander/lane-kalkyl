@@ -3,4 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  p {
+    @apply dark:text-white;
+  }
 }
