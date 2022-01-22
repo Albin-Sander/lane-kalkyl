@@ -12,8 +12,6 @@ import { defineComponent } from "vue";
 import router from "../router";
 import LoanApplication from "../views/LoanApplication.vue";
 
-// /loan-application/?amount=100000&months=120
-
 const Button = defineComponent({
   methods: {
     addRoute: async function () {
