@@ -16,7 +16,7 @@ const Button = defineComponent({
   methods: {
     addRoute: async function () {
       let path = `?amount=${this.$store.state.lanebelopp}&months=${this.$store.state.lanetid}`;
-      console.log(router.getRoutes());
+
       router.addRoute("LoanApplication", {
         path: path,
         component: LoanApplication,

@@ -1,7 +1,11 @@
 <template>
-  <div class="border-solid border-2 border-purple-600 p-4 rounded-lg">
-    <p>Exempel på månadskostnad</p>
-    <p>{{ $store.state.lanebelopp }} / {{ $store.state.lanetid }}</p>
+  <div
+    class="border-solid border-2 border-purple-600 p-4 rounded-lg bg-primary"
+  >
+    <p class="text-white">Exempel på månadskostnad</p>
+    <p class="text-white">
+      {{ $store.state.lanebelopp }} / {{ $store.state.lanetid }}
+    </p>
   </div>
 </template>
 
