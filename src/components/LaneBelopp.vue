@@ -11,11 +11,12 @@
 
       <input
         type="range"
-        min="0"
-        max="350000"
+        min="20000"
+        max="200000"
         v-model="rangeValue"
         placeholder="350 000 kr"
         @change="changeValue"
+        step="10000"
         class="range range-lg w-96 rounded-lg range-primary"
       />
     </div>

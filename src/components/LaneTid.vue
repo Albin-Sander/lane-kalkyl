@@ -11,8 +11,8 @@
 
       <input
         type="range"
-        min="0"
-        max="15"
+        min="2"
+        max="10"
         v-model="rangeValue"
         placeholder="350 000 kr"
         @change="changeValue"
