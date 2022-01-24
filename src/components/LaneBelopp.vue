@@ -28,12 +28,13 @@ import { defineComponent } from "vue";
 const LaneBelopp = defineComponent({
   data() {
     return {
-      rangeValue: 0,
+      rangeValue: 20000,
     };
   },
   methods: {
     changeValue: function () {
       this.$store.commit("changeLaneBeloppValue", this.rangeValue);
+      this.$store.commit("changeMonthlyCost");
     },
   },
 });

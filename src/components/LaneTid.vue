@@ -27,12 +27,13 @@ import { defineComponent } from "vue";
 const LaneTid = defineComponent({
   data() {
     return {
-      rangeValue: 0,
+      rangeValue: 2,
     };
   },
   methods: {
     changeValue: function () {
       this.$store.commit("changeLaneTid", this.rangeValue);
+      this.$store.commit("changeMonthlyCost");
     },
   },
 });

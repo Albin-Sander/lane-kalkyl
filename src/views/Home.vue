@@ -27,6 +27,9 @@ const Home = defineComponent({
     Button,
     Bubble,
   },
+  mounted() {
+    this.$store.commit("changeMonthlyCost");
+  },
 });
 
 export default Home;

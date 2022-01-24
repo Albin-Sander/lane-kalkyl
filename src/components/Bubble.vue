@@ -4,14 +4,24 @@
   >
     <p class="text-white">Exempel på månadskostnad</p>
     <p class="text-white">
-      {{ $store.state.lanebelopp }} / {{ $store.state.lanetid }}
+      {{ Math.round(this.$store.state.monthCost) }}
     </p>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Bubble",
+
+  methods: {
+    calculateRate: function () {
+      this.$store.commit(
+        "changeMonthlyCost",
+        this.$store.state.lanebelopp,
+        this.$store.state.lanetid
+      );
+    },
+  },
 };
 </script>
 
