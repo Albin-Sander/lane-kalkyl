@@ -16,9 +16,7 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 npm install
 ```
 
-npm run dev
-
 ```
-
+npm run dev
 
 ```
