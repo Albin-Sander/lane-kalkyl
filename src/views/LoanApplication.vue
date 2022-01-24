@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center mt-10">
     <div class="flex flex-col content-center">
-      <h1 class="text-black dark:text-white text-4xl">Review Loan</h1>
+      <h1 class="text-black dark:text-white text-4xl">Sammanfattning</h1>
 
       <div class="flex justify-center pt-4">
         <div class="flex flex-col">

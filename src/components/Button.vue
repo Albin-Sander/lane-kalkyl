@@ -22,6 +22,7 @@ const Button = defineComponent({
         component: LoanApplication,
       });
       await router.replace(`/loan-application/${path}`);
+      console.log(path);
     },
   },
 });
