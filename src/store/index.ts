@@ -1,7 +1,17 @@
-import Vue from 'vue'
-import { createStore } from 'vuex'
 
-export const store = createStore({
+import { createStore, useStore as baseUseStore, Store } from 'vuex'
+import { InjectionKey } from 'vue'
+
+
+export interface State {
+  lanebelopp: number,
+  lanetid: number,
+  monthCost: number,
+}
+
+export const key: InjectionKey<Store<State>> = Symbol()
+
+export const store = createStore<State>({
   state () {
     return {
       lanebelopp: 20000,
@@ -30,3 +40,7 @@ export const store = createStore({
   }
   
 })
+
+export function useStore () {
+  return baseUseStore(key)
+}
