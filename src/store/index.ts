@@ -18,12 +18,12 @@ export const store = createStore({
       state.lanetid = year
     },
     changeMonthlyCost(state) {
-      let monthInterest = 0.00825;
-      let cost = state.lanebelopp;
-      let year = state.lanetid
-      let months = 12 * year;
-      let divid = ((1 + monthInterest) ** months) - 1
-      let sum = cost * monthInterest * ((1 + monthInterest) ** months) / divid;
+      const monthInterest = 0.00825;
+      const cost = state.lanebelopp;
+      const year = state.lanetid
+      const months = 12 * year;
+      const divid = ((1 + monthInterest) ** months) - 1
+      const sum = cost * monthInterest * ((1 + monthInterest) ** months) / divid;
       state.monthCost = sum
       
     }
