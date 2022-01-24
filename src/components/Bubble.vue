@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="border-solid border-2 border-purple-600 p-4 rounded-lg bg-primary"
-  >
+  <div class="border-solid border-2 border-none p-4 rounded-lg bg-primary">
     <p class="text-white">Exempel på månadskostnad</p>
     <p class="text-white">
       {{ Math.round(this.$store.state.monthCost) }}

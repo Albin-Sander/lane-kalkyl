@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn btn-primary bg-green-500 hover:bg-green-600"
+    class="btn btn-primary bg-green-500 hover:bg-green-600 border-none"
     v-on:click="addRoute"
   >
     Till ansökan
